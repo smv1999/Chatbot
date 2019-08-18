@@ -8,7 +8,7 @@ bos=ChatBot('bot')
 r = sr.Recognizer()
 engine = pyttsx3.init()
 bos.set_trainer(ListTrainer)
-data=open('/Users/subramanianradhakrishnan/Desktop/Chatbot/dataset.yml','r').readlines()
+data=open('you dir','r').readlines()
 bos.train(data)
 while(True):
     with sr.Microphone() as source:
