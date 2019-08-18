@@ -7,7 +7,7 @@ import os
 bos=ChatBot('bot')
 r = sr.Recognizer()
 bos.set_trainer(ListTrainer)
-data=open('/Users/subramanianradhakrishnan/Desktop/Chatbot/dataset.yml','r').readlines()
+data=open('your dir','r').readlines()
 bos.train(data)
 while(True):
     with sr.Microphone() as source:
